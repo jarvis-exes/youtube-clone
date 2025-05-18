@@ -4,6 +4,7 @@ import { BsYoutube, BsCameraVideo, BsBell } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoAppsSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import userImg from "../assets/images/user.png";
 
 const Navbar = () => {
   return (
@@ -30,9 +31,27 @@ const Navbar = () => {
                 type="text"
                 className="w-96 bg-zinc-900 focus:outline-none border-none"
               />
+              <AiOutlineClose className="text-xl cursor-pointer" />
             </div>
+            <button className="h-10 w-16 flex items-center justify-center bg-zinc-800">
+              <AiOutlineSearch className="text-xl" />
+            </button>
           </div>
         </form>
+        <div className="text-xl p-3 bg-zinc-900 rounded-full">
+          <TiMicrophone />
+        </div>
+      </div>
+      <div className="flex gap-5 items-center text-xl">
+        <BsCameraVideo />
+        <IoAppsSharp />
+        <div className="relative">
+          <BsBell />
+          <span className="absolute bottom-2 left-2 text-xs bg-red-600 rounded-full px-1">
+            9+
+          </span>
+        </div>
+        <img src={userImg} alt="profile" className="w-9 h-9 rounded-full" />
       </div>
     </div>
   );
