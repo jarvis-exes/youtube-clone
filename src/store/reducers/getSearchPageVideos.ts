@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import type { RootState } from "@reduxjs/toolkit/query";
+import type { RootState } from "../index";
 import axios from "axios";
 import { YOUTUBE_API_URL } from "../../utils/constants";
 import type { HomePageVideos } from "../../Types";
