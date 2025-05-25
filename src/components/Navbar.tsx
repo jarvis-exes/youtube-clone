@@ -23,8 +23,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-14 h-14 bg-[#212121] opacity-95 sticky z-50">
-      <div className="flex gap-8 items-center text-2xl">
+    <div className="flex justify-between items-center px-5 h-14 bg-[#212121] opacity-95 sticky z-50">
+      <div className="flex gap-8 items-center text-2xl mr-2">
         <Link to="/">
           <div className="flex gap-1 items-center justify-center">
             <BsYoutube className="text-3xl text-red-600 " />
@@ -46,7 +46,7 @@ const Navbar = () => {
               </div>
               <input
                 type="text"
-                className="w-96 g-zinc-900 focus:outline-none border-none"
+                className="w-full bg-zinc-900 focus:outline-none border-none"
                 value={searchTerm}
                 onChange={(e) => dispatch(changeSearchTerm(e.target.value))}
               />
@@ -62,11 +62,11 @@ const Navbar = () => {
             </button>
           </div>
         </form>
-        <div className="text-xl p-3 bg-zinc-900 rounded-full">
+        <div className="text-xl p-3 bg-zinc-900 rounded-full hidden md:block lg:block">
           <TiMicrophone />
         </div>
       </div>
-      <div className="flex gap-5 items-center text-xl">
+      <div className="gap-5 items-center text-xl hidden lg:flex">
         <BsCameraVideo />
         <IoAppsSharp />
         <div className="relative">
