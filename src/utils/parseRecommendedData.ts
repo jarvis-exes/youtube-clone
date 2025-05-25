@@ -5,7 +5,7 @@ import {
   timeSince,
 } from "./index";
 import { YOUTUBE_API_URL } from "./constants";
-import { Item, RecommendedVideos } from "../Types";
+import type { Item, RecommendedVideos } from "../Types";
 
 const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
 
